@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlACED: The Homeowners Handbook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base font settings */
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; font-weight: 700; }
+        .cursive-font { font-family: 'Dancing Script', cursive; }
+        
+        /* Custom focus ring for better accessibility on the dark theme */
+        .custom-focus-ring:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.5); /* A soft blue glow */
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 leading-relaxed antialiased">
+
+    <nav class="bg-slate-800/80 backdrop-blur-sm p-4 shadow-lg sticky top-0 z-50 border-b border-slate-700">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="#home" class="text-white text-3xl font-bold cursive-font mr-4">PlACED</a>
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="text-slate-300 hover:text-white focus:outline-none custom-focus-ring rounded-md p-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+            <div class="w-full lg:flex lg:items-center lg:w-auto hidden" id="navbar-content">
+                <ul class="lg:flex items-center justify-end text-base pt-4 lg:pt-0 w-full">
+                    <li><a href="#home" class="block lg:inline-block text-slate-300 hover:text-sky-400 px-4 py-2 rounded-md transition duration-300">Home</a></li>
+                    <li><a href="#sheds" class="block lg:inline-block text-slate-300 hover:text-sky-400 px-4 py-2 rounded-md transition duration-300">Sheds & Tiny Homes</a></li>
+                    <li><a href="#maintenance" class="block lg:inline-block text-slate-300 hover:text-sky-400 px-4 py-2 rounded-md transition duration-300">Maintenance</a></li>
+                    <li><a href="#handbook" class="block lg:inline-block text-slate-300 hover:text-sky-400 px-4 py-2 rounded-md transition duration-300">Handbook</a></li>
+                    <li><a href="#about" class="block lg:inline-block text-slate-300 hover:text-sky-400 px-4 py-2 rounded-md transition duration-300">About Us</a></li>
+                    <li><a href="#contact" class="block lg:inline-block text-slate-300 hover:text-sky-400 px-4 py-2 rounded-md transition duration-300">Contact</a></li>
+                    <li><a href="#harper" class="block lg:inline-block bg-sky-500 text-white hover:bg-sky-600 px-5 py-2 rounded-full font-semibold ml-0 mt-4 lg:mt-0 lg:ml-4 transition duration-300 shadow-md">Meet Harper AI</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="homeowners-handbook-blog" class="py-16 sm:py-24">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center mb-6 text-white">The Homeowners Handbook</h1>
+            <p class="text-lg sm:text-xl text-center mb-12 text-slate-400 max-w-3xl mx-auto">Real-world home advice, shed secrets, and renovation realities infused with a healthy dose of humor. Ditch the dry manuals and master your domain (mostly).</p>
+
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+                <input type="text" placeholder="What home mystery are you solving today?" class="flex-grow w-full p-3 bg-slate-800 border border-slate-700 rounded-full shadow-sm text-white placeholder-slate-500 custom-focus-ring transition duration-300">
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button class="px-4 py-2 bg-slate-700 text-slate-200 rounded-full text-sm font-semibold hover:bg-slate-600 hover:text-white transition duration-300">Grandma's Guide</button>
+                    <button class="px-4 py-2 bg-slate-700 text-slate-200 rounded-full text-sm font-semibold hover:bg-slate-600 hover:text-white transition duration-300">Shed Happens!</button>
+                    <button class="px-4 py-2 bg-slate-700 text-slate-200 rounded-full text-sm font-semibold hover:bg-slate-600 hover:text-white transition duration-300">Contractor Chronicles</button>
+                    <button class="px-4 py-2 bg-slate-700 text-slate-200 rounded-full text-sm font-semibold hover:bg-slate-600 hover:text-white transition duration-300">Fine Print</button>
+                    <button class="px-4 py-2 bg-slate-700 text-slate-200 rounded-full text-sm font-semibold hover:bg-slate-600 hover:text-white transition duration-300">Seasonal</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                <article class="bg-slate-800 p-8 rounded-xl shadow-lg border border-slate-700 transform hover:scale-[1.01] hover:border-sky-500 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/800x450/1E293B/FFFFFF?text=PlACED+Blog" alt="Blog post placeholder image" class="w-full h-auto rounded-lg mb-6 shadow-md">
+                    <h2 class="text-3xl font-bold mb-4 text-white">Why Grandma's DIY Roofing Isn't Covered by Warranty</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">We admire the can-do spirit, but when it comes to your roof, the stakes are higher than Grandma's antique porcelain doll collection. A bucket of tar and a rusty ladder might void the very warranty meant to protect you.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">The Comedy of Errors</h3>
+                    <p class="text-slate-400 mb-4">Common DIY blunders not only fail but invalidate manufacturer warranties, leaving you stranded with a much bigger bill down the line.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">The PlACED Promise</h3>
+                    <p class="text-slate-400 mb-4">Our network of certified, insured roofers know warranty requirements inside out, ensuring your investment is protected.</p>
+                    <a href="#" class="inline-block bg-sky-500 text-white px-8 py-3 rounded-full font-bold text-lg shadow-md hover:bg-sky-600 transition duration-300 mt-4">Protect Your Roof</a>
+                </article>
+
+                <article class="bg-slate-800 p-8 rounded-xl shadow-lg border border-slate-700 transform hover:scale-[1.01] hover:border-sky-500 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/800x450/1E293B/FFFFFF?text=PlACED+Blog" alt="Blog post placeholder image" class="w-full h-auto rounded-lg mb-6 shadow-md">
+                    <h2 class="text-3xl font-bold mb-4 text-white">The Great Lightbulb Fiasco</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">Changing a bulb can feel like defusing a bomb, especially in a recessed ceiling fixture. Before you bribe your tech-savvy grandkid, let's shed some light on this common household drama and when to call a pro.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">When It's More Than a Bulb</h3>
+                    <p class="text-slate-400 mb-4">Flickering after replacement, buzzing sounds, or tripped breakers are signs of deeper issues that require a certified electrician.</p>
+                     <h3 class="text-2xl font-semibold mb-3 text-sky-400">Your Handyman, Not Your Hostage</h3>
+                    <p class="text-slate-400 mb-4">For tricky bulb replacements, new fixture installations, or minor electrical checks, our handyman services are just a call away.</p>
+                    <a href="#" class="inline-block bg-sky-500 text-white px-8 py-3 rounded-full font-bold text-lg shadow-md hover:bg-sky-600 transition duration-300 mt-4">Book a Handyman</a>
+                </article>
+                
+                <article class="bg-slate-800 p-8 rounded-xl shadow-lg border border-slate-700 transform hover:scale-[1.01] hover:border-sky-500 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/800x450/1E293B/FFFFFF?text=PlACED+Blog" alt="Blog post placeholder image" class="w-full h-auto rounded-lg mb-6 shadow-md">
+                    <h2 class="text-3xl font-bold mb-4 text-white">Caulking Confessions: The Sticky Truth</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">The chill wind whispers through your window with the distinct sound of your heating bill increasing. Soon, your fingers are a sticky mess and the gap remains. Welcome to the often messy world of caulking.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">The Invisible Energy Thief</h3>
+                    <p class="text-slate-400 mb-4">Even small gaps around windows and doors can lead to significant energy loss, discomfort, and higher utility bills.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">PlACED's Airtight Solutions</h3>
+                    <p class="text-slate-400 mb-4">We provide professional sealing, weatherstripping, and draft assessments to keep your home comfortable and efficient.</p>
+                    <a href="#" class="inline-block bg-sky-500 text-white px-8 py-3 rounded-full font-bold text-lg shadow-md hover:bg-sky-600 transition duration-300 mt-4">Get a Sealing Quote</a>
+                </article>
+
+                <article class="bg-slate-800 p-8 rounded-xl shadow-lg border border-slate-700 transform hover:scale-[1.01] hover:border-sky-500 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/800x450/1E293B/FFFFFF?text=PlACED+Blog" alt="Blog post placeholder image" class="w-full h-auto rounded-lg mb-6 shadow-md">
+                    <h2 class="text-3xl font-bold mb-4 text-white">Your Dog Deserves a Mansion</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">That flimsy, drafty doghouse in the backyard is an embarrassment. Your furry family member deserves a mansion, and our luxury custom pet enclosures are so nice, you might want to move in yourself.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">Features That'll Make Tails Wag</h3>
+                    <p class="text-slate-400 mb-4">Think insulation, climate control, architectural appeal, and custom touches like feeding stations and covered porches.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-sky-400">The PlACED Difference for Paws</h3>
+                    <p class="text-slate-400 mb-4">We use the same quality materials and expert construction for our pet enclosures as we do for our human-sized sheds.</p>
+                    <a href="#" class="inline-block bg-sky-500 text-white px-8 py-3 rounded-full font-bold text-lg shadow-md hover:bg-sky-600 transition duration-300 mt-4">Design a Pet Paradise</a>
+                </article>
+
+            </div> </div>
+    </section>
+
+    <footer class="bg-slate-900 border-t border-slate-800 pt-8 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-400">&copy; 2025 PlACED. All rights reserved. | Your Home, Our Hands</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-slate-400 hover:text-sky-400 transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-slate-400 hover:text-sky-400 transition duration-300">Terms of Service</a>
+                <a href="#" class="text-slate-400 hover:text-sky-400 transition duration-300">Facebook</a>
+                <a href="#" class="text-slate-400 hover:text-sky-400 transition duration-300">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get the button and the navigation content
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarContent = document.getElementById('navbar-content');
+
+        // Add a click event listener to the button
+        menuToggle.addEventListener('click', () => {
+            // Toggle the 'hidden' class on the navigation content
+            navbarContent.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
